@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="bankaccountapp.LoginController">
+    <center>
+        <VBox alignment="CENTER" spacing="10">
+            <TextField fx:id="usernameField" promptText="Username" />
+            <PasswordField fx:id="passwordField" promptText="Password" />
+            <ComboBox fx:id="userTypeComboBox" promptText="Choose a role">
+            </ComboBox>
+            <Button onAction="#handleLogin" text="Login" />
+        </VBox>
+    </center>
+</BorderPane>
